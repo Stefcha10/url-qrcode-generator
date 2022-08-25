@@ -8,6 +8,7 @@ Simple Laravel application for generating QRcode for specific url using [https:/
 
 -   Clone the project with `git clone`
 -   Run `composer install`
+-   Create `.env` file
 -   Run `php artisan key:generate`
 -   Run `php artisan serve` and launch main url - `/`
 
