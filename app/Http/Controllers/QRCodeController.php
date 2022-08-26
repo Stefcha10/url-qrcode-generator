@@ -14,7 +14,6 @@ class QRCodeController extends Controller
             ->generate($request->input('url')));
 
         $pdf = Pdf::loadView('qrcode', compact('qrcode'));
-        $pdf->download('qrcode.pdf');
 
         return $pdf->download('qrcode.pdf');
     }
