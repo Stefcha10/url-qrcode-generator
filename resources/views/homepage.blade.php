@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Url qrcode generator</title>
+        <title>Url QR Code generator</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -23,11 +23,11 @@
             }
         </style>
     </head>
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-700">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
           <a href="/" class="flex items-center">
               <img src="https://code-cache.com/en/wp-content/uploads/2021/09/qr-code.png" class="mr-3 h-6 sm:h-9 rounded-lg" alt="Flowbite Logo" />
-              <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Url code generator</span>
+              <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Url QR Code generator</span>
           </a>
       </nav>
     <body class="antialiased"> 
@@ -47,7 +47,7 @@
                             </div>
                         @endif
                     </div>
-                    <h1 class="text-3xl mb-3 font-bold">Url QRcode generator</h1>
+                    <h1 class="text-3xl mb-3 font-bold">Url QR Code generator</h1>
                     <p>QR Codes allow smartphones users to access your website or some other link simply and quickly.</p>
                     <p>Enter your URL below to generate a QR Code</p>
                 </div>
