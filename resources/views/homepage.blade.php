@@ -31,22 +31,9 @@
           </a>
       </nav>
     <body class="antialiased"> 
-        <div class="grid grid-cols-2 gap-2">
+        <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-2">
             <div class="mt-10">
                 <div class="text-center mt-5 mb-10 text-zinc-700">
-                    <div x-data="{open : true}" class="max-w-2xl mx-auto mb-3 sm:px-6 lg:px-8">
-                        @if(Session::has('message'))
-                            <div x-show="open" class="px-4 py-2 flex justify-between font-bold border bg-white text-blue-600 rounded-md">
-                                <div>
-                                    <i class="fa-solid fa-lg fa-circle-info mr-2 mt-1"></i>
-                                    {{ Session::get('message') }}
-                                </div>
-                                <button @click="open = false" type="button">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                        @endif
-                    </div>
                     <h1 class="text-3xl mb-3 font-bold">Url QR Code generator</h1>
                     <p>QR Codes allow smartphones users to access your website or some other link simply and quickly.</p>
                     <p>Enter your URL below to generate a QR Code</p>
