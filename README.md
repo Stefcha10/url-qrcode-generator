@@ -1,6 +1,7 @@
 # About application
 
-Simple Laravel application for generating QRcode for specific url using [https://github.com/SimpleSoftwareIO/simple-qrcode]
+Simple Laravel application to generate QRcode for specific URL using 
+[https://github.com/SimpleSoftwareIO/simple-qrcode]
 
 ---
 
