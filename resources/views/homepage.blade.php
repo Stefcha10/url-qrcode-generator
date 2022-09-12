@@ -33,10 +33,8 @@
     <body class="antialiased"> 
         <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-2">
             <div class="mt-10">
-                <div class="text-center mt-5 mb-10 text-zinc-700">
-                    <h1 class="text-3xl mb-3 font-bold">Url QR Code generator</h1>
-                    <p>QR Codes allow smartphones users to access your website or some other link simply and quickly.</p>
-                    <p>Enter your URL below to generate a QR Code</p>
+                <div class="text-center text-zinc-700">
+                    <h1 class="text-2xl mb-5 font-bold">Enter your URL below to generate a QR Code</h1>
                 </div>
                 <form class="flex flex-col" method="post" action="{{ route('generate.qr.code' )}}">
                     @csrf
@@ -50,6 +48,12 @@
                             <option value="300">300x300</option>
                             <option value="400">400x400</option>
                             <option value="500">500x500</option>
+                        </select>
+                        <label for="style" class="block mb-2 mt-8 text-sm font-medium text-red-900 dark:text-red-400">SELECT STYLE OF QRCODE</label>
+                        <select id="style" name="style" required class="bg-gray-50 mb-3 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected value="square">Square</option>
+                            <option value="round">Round</option>
+                            <option value="dot">Dot</option>
                         </select>
                         <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm mt-3 float-right px-3 py-2 text-center dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-800">generate</button>
                     </div>
