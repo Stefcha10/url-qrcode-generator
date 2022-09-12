@@ -11,6 +11,7 @@ class QRCodeController extends Controller
     public function __invoke(Request $request)
     {
         $qrcode = base64_encode(QrCode::size($request->input('size'))
+            ->style($request->input('style'))
             ->generate($request->input('url')));
 
         $pdf = Pdf::loadView('qrcode', compact('qrcode'));
