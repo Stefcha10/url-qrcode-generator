@@ -16,6 +16,7 @@ class QRCodeController extends Controller
 
         $pdf = Pdf::loadView('qrcode', compact('qrcode'));
 
+        //stream pdf
         return $pdf->stream('qrcode.pdf');
     }
 }
