@@ -1,0 +1,24 @@
+.qrcode {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+    color: #333333;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    margin-top: 3rem;
+}
